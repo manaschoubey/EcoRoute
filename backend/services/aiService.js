@@ -6,7 +6,7 @@ export async function embedText(text) {
       model: "nomic-embed-text",
       prompt: text,
     });
-    return response.embedding; // 768 dimensions
+    return response.embedding;
   } catch (error) {
     console.error("Error creating embedding:", error);
     throw new Error("Failed to create embedding.");
